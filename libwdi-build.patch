@@ -1,0 +1,49 @@
+diff --git a/libwdi/.msvc/libwdi_static.vcxproj b/libwdi/.msvc/libwdi_static.vcxproj
+index 5f34e79..36200b1 100644
+--- a/libwdi/.msvc/libwdi_static.vcxproj
++++ b/libwdi/.msvc/libwdi_static.vcxproj
+@@ -206,9 +206,6 @@ embedder embedded.h</Command>
+       <Project>{792d44d5-28a7-4eb3-b84b-8021fe3189f9}</Project>
+       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+     </ProjectReference>
+-    <ProjectReference Include="installer_arm64.vcxproj">
+-      <Project>{6ac16f78-f266-4ae0-bd63-550a55f54c15}</Project>
+-    </ProjectReference>
+     <ProjectReference Include="installer_x64.vcxproj">
+       <Project>{e5a56ee0-182f-470f-8cdc-8c1b7b86ee26}</Project>
+       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+@@ -221,4 +218,4 @@ embedder embedded.h</Command>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+   <ImportGroup Label="ExtensionTargets">
+   </ImportGroup>
+-</Project>
+\ No newline at end of file
++</Project>
+diff --git a/msvc/config.h b/msvc/config.h
+index c44d377..9b19656 100644
+--- a/msvc/config.h
++++ b/msvc/config.h
+@@ -37,12 +37,12 @@
+ 
+ /* embed libusb0 driver files from the following location */
+ #ifndef LIBUSB0_DIR
+-#define LIBUSB0_DIR "D:/libusb-win32"
++//#define LIBUSB0_DIR "D:/libusb-win32"
+ #endif
+ 
+ /* embed libusbK driver files from the following location */
+ #ifndef LIBUSBK_DIR
+-#define LIBUSBK_DIR "D:/libusbK/bin"
++//#define LIBUSBK_DIR "D:/libusbK/bin"
+ #endif
+ 
+ /* embed user defined driver files from the following location */
+@@ -57,7 +57,7 @@
+ #define OPT_M64
+ 
+ /* ARM64 support */
+-#define OPT_ARM
++//#define OPT_ARM
+ 
+ /* Debug message logging */
+ //#define ENABLE_DEBUG_LOGGING
