@@ -1,0 +1,17 @@
+# Visual Studio / C++ build files
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.tlog
+*.log
+
+# Temporary files and backups
+*.tmp
+*.bak
+*.zip
+.vs/
+Debug/
+Release/
+x64/
