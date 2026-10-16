@@ -22,7 +22,7 @@ This project enables waveform visualization on the controller's two built-in dis
 
 ## Installation
 
-Download the latest installer from the GitHub Releases section (when available).
+Download the latest installer from the GitHub Releases section. .EXE file.
 
 Close VirtualDJ before installation and run the installer with administrator privileges.
 
