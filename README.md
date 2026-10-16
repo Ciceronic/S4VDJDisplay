@@ -39,3 +39,25 @@ Tested successfully on the developer's S4 MK3, including installation, waveform 
 ## Disclaimer
 
 This is an independent community project and is not affiliated with or endorsed by Native Instruments or Atomix Productions (VirtualDJ).
+
+
+## Third-party components
+
+### libwdi
+
+The Windows installer uses [libwdi](https://github.com/pbatard/libwdi) to install the WinUSB driver for the S4 MK3 display interface.
+
+- Upstream commit: `30df0c0e051b0132c4b9ebed8c054bc8eb3aaaec`
+- Local build modifications: [`libwdi-build.patch`](libwdi-build.patch)
+- License: LGPL-3.0 (see `COPYING-LIBWDI`)
+
+The build modifications disable ARM64 support and remove dependencies on unused libusb0/libusbK driver packages.
+
+### libusb
+
+The VirtualDJ plugin uses libusb 1.0.30 for USB communication.
+
+- Upstream project: https://github.com/libusb/libusb
+- License: LGPL-2.1-or-later (see `COPYING.txt`)
+
+The libusb DLL is distributed alongside the VirtualDJ plugin.
