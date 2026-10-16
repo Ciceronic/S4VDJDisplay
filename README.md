@@ -1,9 +1,11 @@
 # S4VDJDisplay
 VirtualDJ display support for Native Instruments Traktor Kontrol S4 MK3
-
 Native display support for the **Native Instruments Traktor Kontrol S4 MK3** when using **VirtualDJ** on Windows.
 
 This project enables waveform visualization on the controller's two built-in displays.
+
+## Display preview
+![S4 MK3 running VirtualDJ waveforms](S4MK3_VDJ_Screen.png)
 
 ## Features
 
